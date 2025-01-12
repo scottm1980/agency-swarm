@@ -1,0 +1,76 @@
+# Query: gpt-4o
+# Flags: CaseSensitive
+# ContextLines: 1
+
+15 results - 11 files
+
+agency_swarm/agency/genesis/ToolCreator/tools/CreateTool.py:
+  179                  messages=messages,
+  180:                 model="gpt-4o-mini",
+  181                  temperature=0,
+
+agency_swarm/agents/agent.py:
+   96          metadata: Dict[str, str] = None,
+   97:         model: str = "gpt-4o-mini",
+   98          validation_attempts: int = 1,
+
+  125              metadata (Dict[str, str], optional): Metadata associated with the agent. Defaults to an empty dictionary.
+  126:             model (str, optional): The model identifier for the OpenAI API. Defaults to "gpt-4o-mini".
+  127              validation_attempts (int, optional): Number of attempts to validate the response with response_validator function. Defaults to 1.
+
+agency_swarm/agents/BrowsingAgent/BrowsingAgent.py:
+  25              max_prompt_tokens=16000,
+  26:             model="gpt-4o-mini",
+  27              validation_attempts=25,
+
+agency_swarm/agents/BrowsingAgent/tools/SolveCaptcha.py:
+  160              response = client.chat.completions.create(
+  161:                 model="gpt-4o-mini",
+  162                  messages=messages,
+
+agency_swarm/agents/Devid/tools/FileWriter.py:
+  111                      messages=messages,
+  112:                     model="gpt-4o-mini",
+  113                      temperature=0,
+
+  118                      messages=messages,
+  119:                     model="gpt-4o-mini",
+  120                      temperature=0,
+
+  183              client=client,
+  184:             model="gpt-4o-mini",
+  185              temperature=0,
+
+agency_swarm/agents/Devid/tools/util/format_file_deps.py:
+  55              ],
+  56:             model="gpt-4o-mini",
+  57              temperature=0,
+
+agency_swarm/util/validators.py:
+  31      allow_override: bool = False,
+  32:     model: str = "gpt-4o-mini",
+  33      temperature: float = 0,
+
+  63          statement (str): The statement to validate
+  64:         model (str): The LLM to use for validation. Must be compatible with structured outputs. (default: "gpt-4o-mini")
+  65          temperature (float): The temperature to use for the LLM (default: 0)
+
+docs/advanced-usage/communication_flows.md:
+  179          summary = client.chat.completions.create(
+  180:             model="gpt-4o-mini",
+  181              messages=[
+
+docs/advanced-usage/open-source-models.md:
+  69              # model = 'groq/mixtral-8x7b-32768'
+  70:             # model="gpt-4o-mini",
+  71              files_folder="path/to/your/files"
+
+notebooks/os_models_with_astra_assistants_api.ipynb:
+  245      "    model=\"claude-3-5-sonnet-20240620\",\n",
+  246:     "    # model=\"gpt-4o-mini\",\n",
+  247      "    # files_folder=\"./files\",\n",
+
+tests/test_agency.py:
+  166  
+  167:         cls.agent2.model = "gpt-4o-mini"
+  168  

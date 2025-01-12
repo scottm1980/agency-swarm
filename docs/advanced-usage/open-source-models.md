@@ -67,7 +67,7 @@ ceo = Agent(name="ceo",
             # model = 'perplexity/llama-3-8b-instruct'
             # model = 'anthropic/claude-3-5-sonnet-20240620'
             # model = 'groq/mixtral-8x7b-32768'
-            # model="gpt-4o",
+            # model="gpt-4o-mini",
             files_folder="path/to/your/files"
             )
 ```

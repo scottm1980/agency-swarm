@@ -177,7 +177,7 @@ class CreateTool(BaseTool):
         while n < 3:
             resp = client.chat.completions.create(
                 messages=messages,
-                model="gpt-4o",
+                model="gpt-4o-mini",
                 temperature=0,
             )
 

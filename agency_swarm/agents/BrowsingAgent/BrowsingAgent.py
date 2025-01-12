@@ -23,7 +23,7 @@ class BrowsingAgent(Agent):
             tools_folder="./tools",
             temperature=0,
             max_prompt_tokens=16000,
-            model="gpt-4o",
+            model="gpt-4o-mini",
             validation_attempts=25,
             **kwargs,
         )
